@@ -9,5 +9,7 @@ a.) IPv4 Address of the pi
 b.) 5 second average of the speed of my bitcoin miner. <--> cgminer api socket
 c.) api socket server to allow a special message to be displayed through telnet or rest
 
-So to be clear, nothing in this is exactly original I just copy/pasted some stuff from other example codes to beat this thing into whatever it is. 
-This is for a Raspberry pi that I use to operate my old bitcoin miner.
+
+So to be clear, nothing in this is exactly original I just copy/pasted some stuff from other examples
+to beat this thing into whatever it is. 
+This is for a Raspberry pi that I use to operate my butterfly labs LC bitcoin miner.
