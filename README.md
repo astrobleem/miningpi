@@ -6,7 +6,9 @@ for like 15 dollars on amazon.
 I changed and modified the example code and added some stuff to make it so that it shows the
 
 a.) IPv4 Address of the pi  
+
 b.) 5 second average of the speed of my bitcoin miner. <--> cgminer api socket
+
 c.) api socket server to allow a special message to be displayed through telnet or rest
 
 
