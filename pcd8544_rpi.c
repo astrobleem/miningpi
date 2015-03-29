@@ -225,9 +225,9 @@ struct ifaddrs *ifaddr, *ifa;
   LCDshowLogo();
   
   delay(2000);
-  
-  for (;;)
-  {
+  // chad
+  //for (;;)
+ // {
 	  // clear lcd
 	  LCDclear();
 	  
@@ -254,14 +254,14 @@ struct ifaddrs *ifaddr, *ifa;
 	  sprintf(ramInfo, "RAM %ld MB", totalRam);
 	  
 // adding stuff here....
-	  LCDdrawstring(0, 0, "CHADS Rpi");
-	  LCDdrawline(0, 10, 83, 10, BLACK);
-	  LCDdrawstring(0, 12, ipInfo);
+//	  LCDdrawstring(0, 0, "CHADS Rpi");
+//	  LCDdrawline(0, 10, 83, 10, BLACK);
+//	  LCDdrawstring(0, 12, ipInfo);
 //	  LCDdrawstring(0, 12, uptimeInfo);
-	  LCDdrawstring(0, 20, cpuInfo);
-	  LCDdrawstring(0, 28, hashInfo);
+//	  LCDdrawstring(0, 20, cpuInfo);
+//	  LCDdrawstring(0, 28, hashInfo);
 //	  LCDdrawstring(0, 28, ramInfo);
-	  LCDdisplay();
+//	  LCDdisplay();
 
           
 clilen=sizeof(cliaddr);
@@ -282,13 +282,14 @@ clilen=sizeof(cliaddr);
           n = recvfrom(connfd,mesg,1000,0,(struct sockaddr *)&cliaddr,&clilen);
           LCDdrawstring(0,36,mesg);
 	  LCDdisplay();
+	  delay(1000);
 
           //  sendto(connfd,mesg,n,0,(struct sockaddr *)&cliaddr,sizeof(cliaddr));
-            printf("-------------------------------------------------------\n");
-            mesg[n] = 0;
-            printf("Received the following:\n");
-            printf("%s",mesg);
-            printf("-------------------------------------------------------\n");
+          //  printf("-------------------------------------------------------\n");
+         //   mesg[n] = 0;
+          //  printf("Received the following:\n");
+           // printf("%s",mesg);
+          //  printf("-------------------------------------------------------\n");
          }
          
       }
@@ -303,7 +304,7 @@ clilen=sizeof(cliaddr);
 	  //LCDdrawstring(0, 0, "Raspberry Pi:");
 	  
 	  delay(1000);
-  }
+//  }
   
     //for (;;){
   //  printf("LED On\n");
